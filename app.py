@@ -2,7 +2,8 @@ import streamlit as st
 import modules.cyk as cyk
 import pandas as pd
 
-kalimat = st.text_input('Input kalimat')
+st.header("Parsing Kalimat Indonesia Kelompok D3")
+kalimat = st.text_input("Masukkan kalimat yang ingin diperiksa")
 result = cyk.is_accepted(kalimat)
 table = cyk.get_table_element(kalimat)
 chart = pd.DataFrame(table)
