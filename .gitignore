@@ -1,1 +1,3 @@
-tests
+.pytest_cache
+modules/_pycache_
+tests/_pycache_
